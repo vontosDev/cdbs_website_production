@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-controller="pageWrapperController as wrapper">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title ng-bind="title"></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="apple-itunes-app" content="app-id=376771144, affiliate-data=ct=itcweblogin&pt=2003"/> -->
+    <meta ng-if="isAsc" name="apple-itunes-app" content="app-id=1234793120, affiliate-data=ct=ascweblogin&pt=2003" />
+    <meta http-equiv="CACHE-CONTROL" content="no-cache, no-store, must-revalidate">
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <META HTTP-EQUIV="EXPIRES" CONTENT="0">
+
+    <base href="/" />
+
+    <link rel="stylesheet" type="text/css" href="https://www.apple.com/wss/fonts?families=SF+Pro,v1|SF+Pro+Icons,v1" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="/static/vendors.1710797364271.css" />
+    <link rel="stylesheet" href="/static/vendor/itc-header-angular.all.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/itunesconnect.1710797364271.css" />
+    <link ng-if="isAsc" rel="manifest" href="/access/static/assets/manifest.json" crossorigin="use-credentials" />
+
+    <script>
+        window.global_itc_path = '/WebObjects/iTunesConnect.woa';
+    </script>
+
+    <script src="/static/vendors.1710797364271.js"></script>
+    <script src="/static/itunesconnect.1710797364271.js"></script>
+</head>
+
+<body ng-class="wrapperClasses">
+
+    <div id="pageWrapper" ng-show="wrapper.locReady">
+
+        <div id="header">
+            <itc-header logo="itcHeaderLogo" components="itcHeaderComponents"></itc-header>
+            <div id="developer-header-text" ng-bind-html="wrapper.devHeaderWelcome" ng-show="wrapper.showDevHeaderWelcome"></div>
+        </div>
+
+        <div id="view-wrapper" class="flexcol" ui-view></div>
+
+        <footer id="footer" ng-if="includeDevFooter" class="footer">
+            <div class="footer-content">
+                <section class="footer-mini">
+                    <div class="footer-mini-shop footer-mini-news" ng-bind-html="'ITC.Developer.Login.Footer.NewsText' | l10n"></div>
+                    <div class="footer-mini-legal">
+                        <div class="footer-mini-legal-copyright" ng-bind-html="(wrapper.footerConfig.text.copyright + ' ' + wrapper.footerConfig.text.year + ' ' + wrapper.footerConfig.text.rights)"></div>
+                        <div class="footer-mini-legal-links">
+                            <a class="footer-mini-legal-link" ng-repeat="link in wrapper.footerConfig.links" href="{{ link.url }}" ng-bind-html="link.text" target="_blank"></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+
+        <div id="footer" ng-if="includeFooter" class="tb-grid tb-grid--no-gutters new-footer" ng-class="{'dark-style': !darkFooter, 'not-logged-in': !userProfile.userIsAuthenticated}">
+
+            <div class="tb-row">
+
+                <div class="tb-col--small-24">
+
+                    <a href="http://www.apple.com" class="no-text ico-apple">Apple.com</a>
+
+                    <itc-footer ng-if="wrapper.locReady" config="wrapper.footerConfig"></itc-footer>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="pageSpinner" tidbits-spinner="wrapper.pageSpinner" displayed="wrapper.pageSpinnerDisplayed"></div>
+</body>
+</html>
