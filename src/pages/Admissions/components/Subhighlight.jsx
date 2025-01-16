@@ -1,5 +1,6 @@
 import AD2 from "../../../assets/gallery/AD2.jpg";
 import AD3 from "../../../assets/gallery/AD3.jpg";
+import { NavLink } from "react-router-dom";
 
 import arrowback from "../../../assets/images/arrowback.png";
 import arrowforward from "../../../assets/images/arrowforward.png";
@@ -34,10 +35,10 @@ function Subhighlight() {
         </div>
       </div>
       <div className="flex flex-row justify-around ">
-        <div className="flex gap-5">
-          <img src={arrowback} className="w-24 object-contain" />
-          <div className="text-3xl font-thin leading-10">Admissions</div>
-        </div>
+      <NavLink to="https://admissions.cdbs.edu.ph/" className="flex gap-5">
+      <img src={arrowback} className="w-24 object-contain" alt="Back Arrow" />
+      <div className="text-3xl font-thin leading-10">Admissions</div>
+    </NavLink>
         <div className="flex gap-5">
           <div className="text-3xl font-thin leading-10">Enrollment</div>
           <img src={arrowforward} className="w-24 object-contain" />
