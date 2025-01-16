@@ -96,7 +96,7 @@ function FooterSection() {
           {showFacebookPanel && (
             <div className="absolute right-16 top-0 w-[180px] h-[40px] bg-gray-800 text-white p-4 flex justify-center items-center">
                 <a 
-                href="https://www.facebook.com" 
+                href="https://www.facebook.com/CaritasDonBoscoSchool" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-white underline"
@@ -116,7 +116,7 @@ function FooterSection() {
           {showYouTubePanel && (
             <div className="absolute right-16 top-0 w-[180px] h-[40px] bg-gray-800 text-white p-4 flex justify-center items-center">
                 <a 
-                href="https://www.youtube.com" 
+                href="https://www.youtube.com/channel/UC954YgprQNYs2azg4TCf9Lw/videos" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-white underline"
