@@ -128,8 +128,12 @@ function Hero({ type }) {
 </div>
 
             <div className="flex flex-row gap-8">
+              <NavLink to="/admissions">
               <Button text="INQUIRE NOW" btnType={2} />
+            </NavLink>
+            <NavLink to="/about">
               <Button text="LEARN MORE" btnType={1} />
+              </NavLink>  
             </div>
           </div>
           <span className="inline-block italic text-xs sm:text-2xl lg:text-3xl font-thin mb-12 text-white absolute bottom-0 left-10 z-50 typing-effect">
