@@ -112,8 +112,8 @@ function AboutUs() {
               Here, alumni can share personal milestones, professional accomplishments, and community contributions, strengthening ties within the CDBS family.
             </p>
             <div className="flex justify-end items-center gap-4 mt-10">
-              <p className="text-3xl font-bold leading-10">Alumni Forum</p>
-              <img src={ArrowR} alt="Alumni Forum Icon" className="w-8 h-8 object-contain w-[120px] pr-20" />
+              {/* <p className="text-3xl font-bold leading-10">Alumni Forum</p>
+              <img src={ArrowR} alt="Alumni Forum Icon" className="w-8 h-8 object-contain w-[120px] pr-20" /> */}
             </div>
           </div>
         </div>
