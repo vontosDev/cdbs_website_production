@@ -22,7 +22,7 @@ function FooterSection() {
 
   return (
     <section className="h-footer w-full flex flex-col justify-center items-center gap-20 relative">
-      <h3 className="text-8xl font-thin">
+      <h3 className="footer-text">
         The future of your child starts{" "}
         <a 
           href="/admissions" 

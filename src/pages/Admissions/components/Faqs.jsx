@@ -204,10 +204,9 @@ function Faqs() {
         <div className="flex flex-row gap-10">
           <h3 className="text-5xl font-thin">A.</h3>
           <p className="w-2/3 text-3xl font-thin">
-            Our classrooms are not air-conditioned; we use Aeratron fans inside
-            the classrooms. For school service inquiries, kindly contact Mrs.
-            Tañada (0918 800 9789) of the Don Bosco Shuttle Service Association,
-            Inc.
+          Yes. A solar power system and energy-efficient air conditioning units will be installed in our classrooms this coming school year.
+          <br/>
+          For school service inquiries, kindly contact Mrs. Tañada (0918 800 9789) of the Don Bosco Shuttle Service Association, Inc.
           </p>
         </div>
       </div>
