@@ -147,10 +147,11 @@ function Hero({ type }) {
       component = (
         <div className="container-about">
           <div className="pl-10 justify-self-start">
-            <div className="flex flex-col gap-5">
-              <h1 className="text-3xl sm:text-5xl lg:text-8xl font-thin typing-effect">
-                {wrapLetters("ABOUT US")}
-              </h1>
+            <div className="flex flex-col gap-5 pt-20">
+            <h1 className="text-3xl sm:text-5xl lg:text-8xl font-thin typing-effect text-center sm:text-left lg:text-left">
+              {wrapLetters("ABOUT US")}
+            </h1>
+
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-thin typing-effect italic">
                 {wrapLetters("Our Story and Values")}
               </h2>
@@ -245,9 +246,9 @@ function Hero({ type }) {
   return (
     <>
       <div className="h-hero">{component}</div>
-<div className="px-10 z-10">
-  <div className="w-100 h-48 px-10 border-t border-brand">
-    <div className="flex h-full items-center justify-end gap-64 mr-20">
+      <div className="px-10 z-10">
+  <div className="w-full h-48 px-10 border-t border-brand">
+    <div className="hidden md:flex h-full items-center justify-end md:gap-20 lg:gap-64 mr-20">
       <NavLink to="/about">
         <span className="text-xl sm:text-2xl lg:text-3xl hover:cursor-pointer">About Us</span>
       </NavLink>
@@ -263,6 +264,7 @@ function Hero({ type }) {
     </div>
   </div>
 </div>
+
 
     </>
   );

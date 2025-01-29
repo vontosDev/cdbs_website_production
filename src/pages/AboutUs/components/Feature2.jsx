@@ -51,70 +51,52 @@ function Feature2() {
   }, []);
 
   return (
-    <div className="flex flex-row px-20 mb-10">
-      <div className="closed">
-        <div className="reveal opacity-0">
-          <img src={AB4} className="lg-image about-us-image" />
-        </div>
-      </div>
-      <div className="w-1/2 feature-container mt-28">
-        <div>
-          <h2 className="font-thin text-6xl mb-10">Values That Guide Us</h2>
-          <div className="flex flex-col gap-10">
-            <h2 className="text-3xl font-thin leading-10">
-              <span className="font-bold">S</span>elf-Sacrifice: Demonstrates
-              selflessness, sensitivity to others' needs, and advocates for the
-              marginalized without expecting anything in return.
-            </h2>
-            <h2 className="text-3xl font-thin leading-10">
-              <span className="font-bold">O</span>bedience: Commits to school
-              culture and follows established rules and norms.
-            </h2>
-            <h2 className="text-3xl font-thin leading-10">
-              <span className="font-bold">R</span>espect: Displays courtesy,
-              embraces diversity, contributes humbly, and shows care for the
-              environment.
-            </h2>
-            <h2 className="text-3xl font-thin leading-10">
-              <span className="font-bold">I</span>ntegrity: Upholds ethical
-              standards, transparency, accountability, and honesty in all
-              actions.
-            </h2>
-            <h2 className="text-3xl font-thin leading-10">
-              <span className="font-bold">S</span>implicity: Lives modestly,
-              values practicality, shows gratitude, and adapts to challenges.
-            </h2>
-            <h2 className="text-3xl font-thin leading-10">
-              <span className="font-bold">E</span>xcellence: Exhibits strong
-              character, resilience, and fosters creativity for meaningful
-              impact.
-            </h2>
-          </div>
-        </div>
-        {/* <div className="mt-20">
-          <h2 className="font-thin text-6xl mb-10">Lorem Ipsum</h2>
-          <div className="flex flex-col gap-10">
-            <h2 className="text-2xl font-thin leading-10">
-              At Caritas Don Bosco School, we empower students to become more
-              than just learners. We nurture global thinkers, who see the world
-              with an open mind and a curious spirit. We cultivate
-              servant-leaders, who are driven to serve their communities and
-              make a positive impact.
-            </h2>
-            <h2 className="text-2xl font-thin leading-10">
-              Our innovative approach integrates project-based learning
-              throughout the K to 12 curriculum. This hands-on experience allows
-              students to collaborate effectively, develop critical thinking
-              skills, and bring their learning to life.
-            </h2>
-            <h2 className="text-2xl font-thin leading-10">
-              Caritas Don Bosco School - Where education prepares you to think
-              globally, lead compassionately, and collaborate effectively.
-            </h2>
-          </div>
-        </div> */}
+<div className="flex flex-col md:flex-row px-5 md:px-10 lg:px-20 mb-10">
+  {/* Image Section */}
+  <div className="closed md:w-1/2 mb-10 md:mb-0">
+    <div className="reveal opacity-0">
+      <img src={AB4} className="w-full lg-image about-us-image" />
+    </div>
+  </div>
+
+  {/* Text Section */}
+  <div className="w-full md:w-1/2 feature-container mt-10 md:mt-0 lg:mt-28">
+    <div>
+      <h2 className="text-header mb-10 text-center md:text-left">Values That Guide Us</h2>
+      <div className="flex flex-col gap-10">
+        <h2 className="text-1xl sm:text-2xl lg:text-3xl font-thin leading-10">
+          <span className="font-bold">S</span>elf-Sacrifice: Demonstrates
+          selflessness, sensitivity to others' needs, and advocates for the
+          marginalized without expecting anything in return.
+        </h2>
+        <h2 className="text-1xl sm:text-2xl lg:text-3xl font-thin leading-10">
+          <span className="font-bold">O</span>bedience: Commits to school
+          culture and follows established rules and norms.
+        </h2>
+        <h2 className="text-1xl sm:text-2xl lg:text-3xl font-thin leading-10">
+          <span className="font-bold">R</span>espect: Displays courtesy,
+          embraces diversity, contributes humbly, and shows care for the
+          environment.
+        </h2>
+        <h2 className="text-1xl sm:text-2xl lg:text-3xl font-thin leading-10">
+          <span className="font-bold">I</span>ntegrity: Upholds ethical
+          standards, transparency, accountability, and honesty in all
+          actions.
+        </h2>
+        <h2 className="text-1xl sm:text-2xl lg:text-3xl font-thin leading-10">
+          <span className="font-bold">S</span>implicity: Lives modestly,
+          values practicality, shows gratitude, and adapts to challenges.
+        </h2>
+        <h2 className="text-1xl sm:text-2xl lg:text-3xl font-thin leading-10">
+          <span className="font-bold">E</span>xcellence: Exhibits strong
+          character, resilience, and fosters creativity for meaningful
+          impact.
+        </h2>
       </div>
     </div>
+  </div>
+</div>
+
   );
 }
 

@@ -9,19 +9,19 @@ function Subhighlight() {
   return (
     <div className="px-20 py-20 h-screen mt-20 flex flex-col gap-10">
       <h2 className="text-header">Enrolling at Caritas Don Bosco School</h2>
-      <div className="flex flex-col gap-5 w-1/2">
-        <p className="text-3xl font-thin leading-10">
+      <div className="flex flex-col gap-5 w-full sm:w-1/2">
+        <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">
           At Caritas Don Bosco School, we invite both new and returning students
           to join our vibrant community. Our enrollment process is designed to
           be straightforward, providing families with the necessary information
           to facilitate a smooth transition.
         </p>
-        <p className="text-3xl font-thin leading-10">
+        <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">
           New students will receive guidance through the application process,
           while returning students can look forward to continued support in
           their educational journey.
         </p>
-        <p className="text-3xl font-thin leading-10">
+        <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">
           Together, we foster a love of learning and a commitment to developing
           responsible citizens and servant-leaders for a brighter future.
         </p>

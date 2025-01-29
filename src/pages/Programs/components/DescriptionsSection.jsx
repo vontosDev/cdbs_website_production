@@ -211,69 +211,77 @@ function DescriptionsSection({
   return (
     <>
       <div className="h-screen flex flex-col gap-36 justify-around mt-10 mb-36">
-        <div className="w-4/5 border border-black p-4 flex flex-row gap-10 overflow-hidden">
-          <div className="closed">
-            <div className="reveal1 opacity-0 ">
-              <img src={image1} className=" programs-image" />
-            </div>
-          </div>
-          <div className="flex flex-col gap-10 justify-center">
-            <h2 className="text-6xl font-thin">{title1}</h2>
-            <div className="flex flex-col gap-5">
-              <p className="text-3xl font-thin leading-10">{para1a}</p>
-              <p className="text-3xl font-thin leading-10">{para1b}</p>
-            </div>
-          </div>
-        </div>
-        <div className="w-4/5 border border-black self-end">
-          <div className="flex flex-row p-4 gap-10 overflow-hidden">
-            <div className="closed">
-              <div className="reveal2 opacity-0">
-                <img src={image2} className="h-100 programs-image-2" />
-              </div>
-            </div>
-            <div className="flex flex-col gap-10 justify-center">
-              <h2 className="text-6xl font-thin">{title2}</h2>
-              <div className="flex flex-col gap-5">
-                <p className="text-3xl font-thin leading-10">{para2a}</p>
-                <p className="text-3xl font-thin leading-10">{para2b}</p>
-              </div>
-            </div>
-          </div>
+  {/* First Section */}
+  <div className="w-4/5 border border-black p-4 flex flex-col sm:flex-col md:flex-row gap-10 overflow-hidden">
+    <div className="closed">
+      <div className="reveal1 opacity-0">
+        <img src={image1} className="programs-image" />
+      </div>
+    </div>
+    <div className="flex flex-col gap-10 justify-center">
+      <h2 className="text-header font-thin">{title1}</h2>
+      <div className="flex flex-col gap-5">
+        <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">{para1a}</p>
+        <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">{para1b}</p>
+      </div>
+    </div>
+  </div>
+
+  {/* Second Section */}
+  <div className="w-4/5 border border-black self-end">
+    <div className="flex flex-col sm:flex-col md:flex-row p-4 gap-10 overflow-hidden">
+      <div className="closed">
+        <div className="reveal2 opacity-0">
+          <img src={image2} className="h-100 programs-image-2" />
         </div>
       </div>
-      <div className="h-screen flex flex-col gap-36 justify-around mt-10 mb-64">
-        <div className="w-4/5 border border-black p-4 flex flex-row gap-10 overflow-hidden">
-          <div className="closed">
-            <div className="reveal3 opacity-0">
-              <img src={image3} className="h-100 programs-image-4" />
-            </div>
-          </div>
-          <div className="flex flex-col gap-10 justify-center">
-            <h2 className="text-6xl font-thin">{title3}</h2>
-            <div className="flex flex-col gap-5">
-              <p className="text-3xl font-thin leading-10">{para3a}</p>
-              <p className="text-3xl font-thin leading-10">{para3b}</p>
-            </div>
-          </div>
-        </div>
-        <div className="w-4/5 border border-black self-end">
-          <div className="flex flex-row p-4 gap-10 overflow-hidden">
-            <div className="closed">
-              <div className="reveal4 opacity-0">
-                <img src={image4} className="h-100 programs-image-3" />
-              </div>
-            </div>
-            <div className="flex flex-col gap-10 justify-center">
-              <h2 className="text-6xl font-thin">{title4}</h2>
-              <div className="flex flex-col gap-5">
-                <p className="text-3xl font-thin leading-10">{para4a}</p>
-                <p className="text-3xl font-thin leading-10">{para4b}</p>
-              </div>
-            </div>
-          </div>
+      <div className="flex flex-col gap-10 justify-center">
+        <h2 className="text-header font-thin">{title2}</h2>
+        <div className="flex flex-col gap-5">
+          <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">{para2a}</p>
+          <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">{para2b}</p>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<div className="h-screen flex flex-col gap-36 justify-around mt-10 mb-64">
+  {/* First Section */}
+  <div className="w-4/5 border border-black p-4 flex flex-col sm:flex-col md:flex-row gap-10 overflow-hidden">
+    <div className="closed">
+      <div className="reveal3 opacity-0">
+        <img src={image3} className="h-100 programs-image-4" />
+      </div>
+    </div>
+    <div className="flex flex-col gap-10 justify-center">
+      <h2 className="text-header font-thin">{title3}</h2>
+      <div className="flex flex-col gap-5">
+        <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">{para3a}</p>
+        <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">{para3b}</p>
+      </div>
+    </div>
+  </div>
+
+  {/* Second Section */}
+  <div className="w-4/5 border border-black self-end">
+    <div className="flex flex-col sm:flex-col md:flex-row p-4 gap-10 overflow-hidden">
+      <div className="closed">
+        <div className="reveal4 opacity-0">
+          <img src={image4} className="h-100 programs-image-3" />
+        </div>
+      </div>
+      <div className="flex flex-col gap-10 justify-center">
+        <h2 className="text-header font-thin">{title4}</h2>
+        <div className="flex flex-col gap-5">
+          <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">{para4a}</p>
+          <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">{para4b}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
     </>
   );
 }

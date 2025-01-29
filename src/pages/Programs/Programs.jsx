@@ -36,31 +36,31 @@ function Programs() {
       />
       <Highlight type={1} image={P5}>
         <div className={`ml-24 flex flex-col gap-5 mt-24`}>
-          <p className="text-3xl font-thin leading-10">
+          <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">
             <p>Faith Dimension General Objective:</p>
             To nurture a strong Christian faith and Salesian spirituality,
             fostering personal devotion to Mary and Jesus while guiding learners
             toward upright citizenship and meaningful vocations.
           </p>
-          <p className="text-3xl font-thin leading-10">
+          <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">
             <p>Academic Dimension General Objective:</p>
             To build academic competence through the K-12 curriculum,
             emphasizing mastery of essential concepts and lifelong learning
             skills for future success.
           </p>
-          <p className="text-3xl font-thin leading-10">
+          <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">
             <p>Technical Dimension General Objective:</p>
             To develop technical knowledge and skills in basic and advanced
             processes, preparing learners for 21st-century tools through the
             K-12 program and electives.
           </p>
-          <p className="text-3xl font-thin leading-10">
+          <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">
             <p>Social Dimension General Objective:</p>
             To instill pride and responsible citizenship by embracing cultural
             heritage and encouraging charitable service, aligned with Catholic
             principles.
           </p>
-          <p className="text-3xl font-thin leading-10">
+          <p className="sm:text-1xl md:text-2xl lg:text-3xl font-thin leading-10">
             <p>Growth Dimension General Objective:</p>
             To enhance self-discipline and socio-emotional maturity, fostering
             effective interpersonal skills through homeroom programs and

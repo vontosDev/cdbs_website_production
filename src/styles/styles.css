@@ -11,9 +11,7 @@
   top: 32.5rem;
 }
 
-.h-about {
-  height: 100rem;
-}
+
 
 .h-footer {
   height: 40rem;
@@ -59,10 +57,71 @@
     font-weight: lighter;
   }
 
+  .alumni-header {
+    font-size: 3.8rem;
+    font-weight: 300;
+  }
+
+
   .footer-text {
     font-size: 6rem; 
     font-weight: 200; 
   }
+
+  .picture1 {
+    position: relative;
+    width: 85rem;
+    height: 80rem;
+    object-fit: cover;
+    object-position: 80% 0;
+    z-index: 3;
+  }
+
+  .h-about {
+    height: 100rem;
+    padding-left: 80px;
+  }
+
+  .picture2 {
+    width: 90rem;
+    height: 70rem;
+  }
+
+  .feature-container {
+    padding-left: 5rem;
+    margin-bottom: 10rem;
+    display: column;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 40rem; */
+  }
+
+  .container-about {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 0 10rem;
+    align-items: center;
+  }
+  
+
+  .Gslide-container {
+    overflow: hidden;
+    width: 150vh;
+    height: 73.4vh;
+    margin-right: 0;
+    /* width: 500px; */
+    /* height: 350px; */
+  }
+
+  .gallery-img-1 {
+    height: 80vh;
+    object-fit: cover;
+  }
+
+
   
 }
 
@@ -75,13 +134,66 @@
 /* MEDIUM SCREENS */
 @media (min-width: 601px) and (max-width: 890px) {
   .text-header {
-    font-size: 2.8rem;
-    font-weight: lighter;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .alumni-header {
+    padding-top: 20px;
+    font-size: 2rem;
+    font-weight: 300;
   }
 
   .footer-text {
     font-size: 3rem; 
     font-weight: 200;
+  }
+
+  .picture1 {
+    display: none;
+  }
+  
+
+  .h-about {
+    height: 40rem;
+  }
+
+  .picture2 {
+    width: 60rem;
+    height: 40rem;
+  }
+
+  .feature-container {
+    padding-left: 2rem;
+    margin-bottom: 10rem;
+    display: column;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 40rem; */
+  }
+
+  .container-about {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 0 10rem;
+    align-items: center;
+  }
+
+  .Gslide-container {
+    overflow: hidden;
+    width: 24vh;
+    height: 73.4vh;
+    margin-right: 0;
+    /* width: 500px; */
+    /* height: 350px; */
+  }
+
+  .gallery-img-1 {
+    height: 43vh;
+    object-fit: cover;
   }
   
 }
@@ -97,14 +209,64 @@
 /* SMALL SCREENS */
 @media (min-width: 320px) and (max-width: 600px) {
   .text-header {
+    padding-top: 20px;
     font-size: 1.8rem;
-    font-weight: lighter;
+    font-weight: 300;
+  }
+
+  .alumni-header {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 300;
   }
 
   .footer-text {
     font-size: 2rem; 
     font-weight: 200;
   }
+
+  .picture1 {
+    display: none;
+  }
+
+  .h-about {
+    height: 40rem;
+  }
+
+  .feature-container {
+    padding-left: 2rem;
+    margin-bottom: 10rem;
+    display: column;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 40rem; */
+  }
+
+  .container-about {
+    height: 80%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 0 10rem 0 10rem; */
+    align-items: center;
+    font-size: 8px;
+  }
+
+  .Gslide-container {
+    overflow: hidden;
+    width: 13vh;
+    height: 73.4vh;
+    margin-right: 0;
+    /* width: 500px; */
+    /* height: 350px; */
+  }
+
+  .gallery-img-1 {
+    height: 43vh;
+    object-fit: cover;
+  }
+  
 }
 
 
@@ -145,14 +307,7 @@
 
 
 
-  .picture1 {
-    position: relative;
-    width: 85rem;
-    height: 80rem;
-    object-fit: cover;
-    object-position: 80% 0;
-    z-index: 3;
-  }
+ 
 
 .second-picture-el {
   left: 8.75rem;
@@ -160,10 +315,7 @@
   bottom: -15rem;
 }
 
-.picture2 {
-  width: 90rem;
-  height: 70rem;
-}
+
 
 .border-brand {
   border-color: blue;
@@ -176,24 +328,8 @@
   width: 100dvw;
 }
 
-.container-about {
-  height: 100%;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 10rem 0 10rem;
-  align-items: center;
-}
 
-.feature-container {
-  padding-left: 10rem;
-  margin-bottom: 10rem;
-  display: column;
-  justify-content: space-around;
-  align-items: center;
-  /* gap: 40rem; */
-}
+
 
 .h-images-carousel {
   height: 30vh;
@@ -384,14 +520,7 @@
   }
 }
 
-.Gslide-container {
-  overflow: hidden;
-  width: 150vh;
-  height: 73.4vh;
-  margin-right: 0;
-  /* width: 500px; */
-  /* height: 350px; */
-}
+
 
 .Gphotobanner::before {
   content: "";
@@ -471,10 +600,7 @@
   height: 70rem;
 }
 
-.gallery-img-1 {
-  height: 80vh;
-  object-fit: cover;
-}
+
 
 .gallery-img-1a {
   width: 1450px;

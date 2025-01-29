@@ -79,45 +79,42 @@ function AboutUs() {
       <Feature2 />
       <Location />
 
-      <div className="mt-10 border border-black overflow-hidden mx-20 w-[70%] h-[320px] ml-auto flex flex-row items-center px-5 py-5">
-        <div
-          className="w-[40%] h-full"
-          ref={ref}
-        >
 
 
 
+      <div className="mt-10 border border-black overflow-hidden mx-20 w-[70%] h-auto ml-auto flex flex-col md:flex-row items-center px-5 py-5">
+  {/* Image Section */}
+  <div className="w-full md:w-[40%] h-full mb-5 md:mb-0" ref={ref}>
+    <div className="reveal">
+      <img
+        src={AB5}
+        alt="Alumni Image"
+        className={`w-full h-full object-cover transition-transform duration-1000 ease-in-out ${
+          inView ? "transform translate-y-0" : "transform translate-y-20"
+        }`}
+      />
+    </div>
+  </div>
 
-          <div className="reveal">
-          <img
-            src={AB5}
-            alt="Alumni Image"
-            className={`w-full h-full object-cover transition-transform duration-1000 ease-in-out ${inView ? "transform translate-y-0" : "transform translate-y-20"}`}
-          />
-          </div>
-        </div>
+  {/* Text Section */}
+  <div className="flex flex-col gap-10 justify-center w-full md:w-[60%]">
+    <h2 className="alumni-header pl-0 md:pl-10 text-center md:text-left">Don Bosco Alumni Community</h2>
+    <div className="flex flex-col pl-10 gap-5">
+      <p className="text-1xl sm:text-2xl lg:text-3xl font-thin leading-10 text-center md:text-left">
+        The Alumni Community is a dedicated space to celebrate the achievements and updates of Caritas Don Bosco School graduates.
+      </p>
+      <p className="text-1xl sm:text-2xl lg:text-3xl font-thin leading-10 text-center md:text-left">
+        Here, alumni can share personal milestones, professional accomplishments, and community contributions, strengthening ties within the CDBS family.
+      </p>
+      {/* <div className="flex justify-end items-center gap-4 mt-10">
+              <p className="text-3xl font-bold leading-10">Alumni Forum</p>
+              <img src={ArrowR} alt="Alumni Forum Icon" className="w-8 h-8 object-contain w-[120px] pr-20" />
+            </div> */}
+    </div>
+  </div>
+</div>
 
-
-
-
-
-
-        <div className="flex flex-col gap-10 justify-center h-full w-[60%]">
-          <h2 className="text-6xl font-thin pl-10">Don Bosco Alumni Community</h2>
-          <div className="flex flex-col gap-5">
-            <p className="text-3xl font-thin leading-10 pl-10">
-              The Alumni Community is a dedicated space to celebrate the achievements and updates of Caritas Don Bosco School graduates.
-            </p>
-            <p className="text-3xl font-thin leading-10 pl-10">
-              Here, alumni can share personal milestones, professional accomplishments, and community contributions, strengthening ties within the CDBS family.
-            </p>
-            <div className="flex justify-end items-center gap-4 mt-10">
-              {/* <p className="text-3xl font-bold leading-10">Alumni Forum</p>
-              <img src={ArrowR} alt="Alumni Forum Icon" className="w-8 h-8 object-contain w-[120px] pr-20" /> */}
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       <FooterSection />
     </div>
