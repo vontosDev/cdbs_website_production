@@ -210,12 +210,12 @@ function DescriptionsSection({
   }, []);
   return (
     <>
-      <div className="h-screen flex flex-col gap-36 justify-around mt-10 mb-36">
+<div className="h-screen flex flex-col gap-36 justify-around mt-10 mb-36">
   {/* First Section */}
   <div className="w-4/5 border border-black p-4 flex flex-col sm:flex-col md:flex-row gap-10 overflow-hidden">
     <div className="closed">
       <div className="reveal1 opacity-0">
-        <img src={image1} className="programs-image" />
+      <img src={image1} className="h-100 programs-image1" />
       </div>
     </div>
     <div className="flex flex-col gap-10 justify-center">
@@ -246,12 +246,13 @@ function DescriptionsSection({
   </div>
 </div>
 
+
 <div className="h-screen flex flex-col gap-36 justify-around mt-10 mb-64">
   {/* First Section */}
   <div className="w-4/5 border border-black p-4 flex flex-col sm:flex-col md:flex-row gap-10 overflow-hidden">
     <div className="closed">
       <div className="reveal3 opacity-0">
-        <img src={image3} className="h-100 programs-image-4" />
+        <img src={image3} className="h-100 programs-image-3" />
       </div>
     </div>
     <div className="flex flex-col gap-10 justify-center">
@@ -268,7 +269,7 @@ function DescriptionsSection({
     <div className="flex flex-col sm:flex-col md:flex-row p-4 gap-10 overflow-hidden">
       <div className="closed">
         <div className="reveal4 opacity-0">
-          <img src={image4} className="h-100 programs-image-3" />
+          <img src={image4} className="h-100 programs-image-4" />
         </div>
       </div>
       <div className="flex flex-col gap-10 justify-center">

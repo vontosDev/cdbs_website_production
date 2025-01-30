@@ -145,7 +145,7 @@
   }
 
   .footer-text {
-    font-size: 3rem; 
+    font-size: 2.8rem; 
     font-weight: 200;
   }
 
@@ -184,15 +184,15 @@
 
   .Gslide-container {
     overflow: hidden;
-    width: 24vh;
-    height: 73.4vh;
+    width: 44vh;
+    height: 82vh;
     margin-right: 0;
     /* width: 500px; */
     /* height: 350px; */
   }
 
   .gallery-img-1 {
-    height: 43vh;
+    height: 82vh;
     object-fit: cover;
   }
   
@@ -221,7 +221,7 @@
   }
 
   .footer-text {
-    font-size: 2rem; 
+    font-size: 1.8rem; 
     font-weight: 200;
   }
 
@@ -255,15 +255,15 @@
 
   .Gslide-container {
     overflow: hidden;
-    width: 13vh;
-    height: 73.4vh;
+    width: 33vh;
+    height: 82vh;
     margin-right: 0;
     /* width: 500px; */
     /* height: 350px; */
   }
 
   .gallery-img-1 {
-    height: 43vh;
+    height: 83vh;
     object-fit: cover;
   }
   
@@ -921,9 +921,9 @@ button:hover {
   object-position: 55% 0;
 }
 
-.programs-image {
+.programs-image1 {
   height: 30rem;
-  width: 94.5rem !important;
+  width: 118rem !important;
 }
 
 .programs-image-2 {
@@ -931,15 +931,17 @@ button:hover {
   width: 118rem !important;
 }
 
-.programs-image-4 {
-  height: 30rem;
-  width: 122.5rem !important;
-}
-
 .programs-image-3 {
   height: 30rem;
-  width: 111rem;
+  width: 118rem !important;
 }
+
+.programs-image-4 {
+  height: 30rem;
+  width: 118rem !important;
+}
+
+
 
 .image-highlights {
   /* width: 80rem !important; */
